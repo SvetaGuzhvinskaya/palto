@@ -54,14 +54,59 @@ btnsBack.forEach((btn) => {
 const butterfly = document.querySelector('.js-butterfly')
 const arm = document.querySelector('.js-arm')
 
+
+// var leftItem = document.getElementById('item0'),
+//     rightItem = document.getElementById('item1');
+
+// ;(function(){
+
+//   var throttle = function(type, name, obj){
+//     var obj = obj || window;
+//     var running = false;
+//     var func = function(){
+//       if (running){ return; }
+//       running = true;
+//       requestAnimationFrame(function(){
+//         obj.dispatchEvent(new CustomEvent(name));
+//         running = false;
+//       });
+//     };
+//     obj.addEventListener(type, func);
+//   };
+  
+//   throttle("scroll", "optimizedScroll");
+// })();
+
+// window.addEventListener("optimizedScroll", function(){
+  
+//   leftItem.style.transform = "rotate(-" + window.pageYOffset + "deg)";
+//   rightItem.style.transform = "rotate(" + window.pageYOffset + "deg)";
+// })
+
+// load
+const jsLoad = document.querySelector('.js-load')
+const fadeOut = (el, timeout) => {
+  el.style.opacity = 1;
+  el.style.transition = `opacity ${timeout}ms`;
+  el.style.opacity = 0;
+
+  setTimeout(() => {
+    el.style.display = 'none';
+  }, timeout);
+};
+window.onload = function() {
+  fadeOut(jsLoad, 2000);
+  
+}
+
 window.addEventListener('scroll', function() {
-  if(window.scrollY < 100) {
-    butterfly.style.transform = `translate(${window.scrollY}px, -${window.scrollY - 10}px)rotate(-${window.scrollY - 5}deg)`
-  } if(window.scrollY < 200 && window.scrollY > 100) {
-    butterfly.style.transform = `translate(${window.scrollY}px, -${window.scrollY - 10}px)rotate(-${window.scrollY - 170}deg)`
-  } if(window.scrollY < 300 && window.scrollY > 200) {
-    butterfly.style.transform = `translate(${window.scrollY}px, -${window.scrollY - 230}px)rotate(-${window.scrollY - 410}deg)`
-  }
+  // if(window.scrollY < 100) {
+  //   butterfly.style.transform = `translate(${window.scrollY}px, -${window.scrollY - 10}px)rotate(-${window.scrollY - 5}deg)`
+  // } if(window.scrollY < 200 && window.scrollY > 100) {
+  //   butterfly.style.transform = `translate(${window.scrollY}px, -${window.scrollY - 10}px)rotate(-${window.scrollY - 170}deg)`
+  // } if(window.scrollY < 300 && window.scrollY > 200) {
+  //   butterfly.style.transform = `translate(${window.scrollY}px, -${window.scrollY - 230}px)rotate(-${window.scrollY - 410}deg)`
+  // }
 
   let offsetFooter = document.querySelector('.screen-footer').offsetTop - 600
 
