@@ -580,7 +580,7 @@ a {
 
 .screen-middle__girl {
   position: relative;
-  width: calc(100% - 13.4em);
+  width: 100%;
   height: 108.65em;
   background: center top url("../img/girl.png") no-repeat;
   background-size: auto 100%;
