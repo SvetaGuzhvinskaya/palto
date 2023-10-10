@@ -125,7 +125,7 @@ window.onload = function() {
 window.addEventListener("optimizedScroll", function(){
   let offsetTop = document.querySelector('.screen-top').offsetTop - 100
   let offsetMiddle = document.querySelector('.screen-middle').offsetTop - 300
-  let offsetFooter = document.querySelector('.screen-footer').offsetTop - 600
+  let offsetFooter = document.querySelector('.screen-footer').offsetTop - 650
 
   if(window.scrollY >= 1) {
     butterfly.style.transform = `translate(${window.scrollY}px, -${window.scrollY - 5}px)rotate(-${window.scrollY - 2}deg)`

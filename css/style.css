@@ -114,6 +114,7 @@ a {
   height: 7.143em;
   margin-top: -3.571em;
   font-family: "Gilroy";
+  font-size: 3em;
   line-height: 7.143em;
   font-weight: 700;
   color: #ff7a7a;
@@ -1627,6 +1628,14 @@ a {
     width: 8em;
     height: 8em;
     transform: translateY(calc(-50% - 2.5em));
+  }
+  .sreen-klimat,
+  .sreen-nepro,
+  .sreen-style,
+  .sreen-aqua,
+  .sreen-makeup {
+    background-image: url("../img/bg-screen-mob.jpg");
+    background-size: 100% auto;
   }
 }
 
