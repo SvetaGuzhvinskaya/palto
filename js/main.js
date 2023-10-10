@@ -38,10 +38,10 @@ anime({
   loop: true, 
 });
 
-let screenBootm = document.querySelector('.screen-bottom')
-screenBootm.addEventListener("mouseover", () => {
-  screenBootm.classList.add('animation-started')
-})
+// let screenBootm = document.querySelector('.screen-bottom')
+// screenBootm.addEventListener("mouseover", () => {
+//   screenBootm.classList.add('animation-started')
+// })
 // Array.prototype.forEach.call(
 //   document.querySelectorAll('.js-scroll'),
 //   (el) => new SimpleBar(el)
@@ -123,9 +123,10 @@ window.onload = function() {
 })();
 
 window.addEventListener("optimizedScroll", function(){
-  let offsetTop = document.querySelector('.screen-top').offsetTop - 100
+  let offsetBottom = document.querySelector('.screen-bottom').offsetTop - 150
   let offsetMiddle = document.querySelector('.screen-middle').offsetTop - 300
   let offsetFooter = document.querySelector('.screen-footer').offsetTop - 650
+  let screenBootm = document.querySelector('.screen-bottom')
 
   if(window.scrollY >= 1) {
     butterfly.style.transform = `translate(${window.scrollY}px, -${window.scrollY - 5}px)rotate(-${window.scrollY - 2}deg)`
@@ -137,6 +138,10 @@ window.addEventListener("optimizedScroll", function(){
     butterfly.style.transform = `translate(0, 0)rotate(0)`
   }
   
+
+  if(window.scrollY > offsetBottom) {
+    screenBootm.classList.add('animation-started')
+  }
   
 
   if(window.scrollY > offsetMiddle){
