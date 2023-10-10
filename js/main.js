@@ -62,6 +62,10 @@ btns.forEach((btn) => {
       let screenId = item.getAttribute("id")
       if(btnsData === screenId) {
         item.classList.remove('hidden')
+        window.scrollTo({
+          top: item.offsetTop,
+          behavior: "smooth"
+        })
       }
       
     })
@@ -76,7 +80,7 @@ btnsBack.forEach((btn) => {
       item.classList.add('hidden')
     })
     window.scrollTo({
-      top: document.body.scrollHeight - (document.querySelector('.screen-footer').scrollHeight / 1.5),
+      top: document.body.scrollHeight - (document.querySelector('.screen-footer').scrollHeight / 1.1),
       behavior: "smooth"
     })
   })

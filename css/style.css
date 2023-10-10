@@ -993,6 +993,16 @@ a {
   height: calc(100% - 16.8em);
   z-index: 9;
 }
+.sticker {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 29.000em;
+  height: 30.800em;
+  background: 0 0 url('../img/sticker.png') no-repeat;
+  background-size: 100% 100%;
+  z-index: 99;
+}
 
 .img-swipe {
   position: absolute;
