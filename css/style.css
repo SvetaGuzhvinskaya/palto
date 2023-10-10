@@ -1056,7 +1056,22 @@ a {
 .txt-mannequin05 {
   background-image: url("../img/txt-mannequin05.svg");
 }
+.screen-copyright {
+  position: relative;
+  padding: 0.5em 0;
+  background: left top url("../img/bg-screen04.jpg") no-repeat;
+  background-size: 100% auto;
+  z-index: 8;
+}
 
+.screen-copyright__title {
+  margin-bottom: 1em;
+  font-size: 1.5em;
+}
+.screen-copyright__description {
+  font-size: 1em;
+  line-height: 1.5em;
+}
 .sub-page {
   position: relative;
   width: 100%;
