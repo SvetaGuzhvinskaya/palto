@@ -167,6 +167,10 @@ a {
   }
 }
 
+.owl-stage {
+  transition: all .5s ease-out !important;
+}
+
 .conteiner {
   position: relative;
   padding: 5em 8.6em 5em 9.5em;
