@@ -1,232 +1,401 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Пальто</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link
-  rel="stylesheet"
-  href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
-/>
-</head>
-<body>
-  <div class="loading js-load">
-    <div class="loading__txt"><span class="loading__words">L</span><span class="loading__words">O</span><span class="loading__words">A</span><span class="loading__words">D</span><span class="loading__words">I</span><span class="loading__words">N</span><span class="loading__words">G</span></div>
-  </div>
-  <div class="main-page">
-    <div class="screen-top">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Пальто</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <!-- <link rel="stylesheet" href="css/owl.theme.default.min.css"> -->
+  </head>
+  <body>
+    <div class="loading js-load">
+      <div class="loading__txt">
+        <span class="loading__words">L</span
+        ><span class="loading__words">O</span
+        ><span class="loading__words">A</span
+        ><span class="loading__words">D</span
+        ><span class="loading__words">I</span
+        ><span class="loading__words">N</span
+        ><span class="loading__words">G</span>
+      </div>
+    </div>
+    <div class="main-page">
+      <div class="screen-top">
+        <div class="noise"></div>
+        <div class="screen-top__flower-left"></div>
+        <div class="screen-top__flower-right"></div>
+        <div class="screen-top__text-top anim-text-left"></div>
+        <div class="screen-top__text-bottom anim-text-right"></div>
+        <div class="screen-top__entry">
+          <div class="screen-top__entry-top">
+            <div class="txt-delete screen-top__delete">Уничтож</div>
+          </div>
+          <div class="screen-top__entry-middle">
+            <div class="txt-this screen-top__this">это</div>
+            <div class="screen-top__txt">
+              краш-тест пальто с мембраной<br />
+              Pompa от редакции Heroine
+            </div>
+          </div>
+          <div class="screen-top__entry-bottom">
+            <div class="txt-coat screen-top__coat">пальто</div>
+            <div class="screen-top__butterfly js-butterfly"></div>
+          </div>
+        </div>
+      </div>
+      <div class="screen-middle">
+        <div class="noise"></div>
+        <div class="screen-middle__txt-top js-plax"></div>
+        <div class="screen-middle__txt-middle"></div>
+        <div class="screen-middle__txt-bottom"></div>
+        <div class="screen-middle__girl"></div>
+      </div>
+      <div class="screen-bottom">
+        <div class="noise"></div>
+        <div class="screen-bottom__description">
+          Осень с переменчивой погодой, зима с холодными ветрами и снегом
+          требуют соответствующей верхней одеждыю Она должна быть красивой, а
+          главное - комфортной: защищать от ветра и осадклв и обеспечивать
+          теплою Наша героиня Милена рассказала, с какими проблемами чаще всего
+          сталкивалась при выборе верхней одежды, и поделилась опытом носки
+          пальто
+          <a href="#" data-modal="#modal-pompa" class="js-modal">Pompa.</a> А мы
+          провели несколько эксперементов, чтобы проверить его на водостойкость,
+          непродуваемость и эффективность климат-контроля.
+        </div>
+        <div class="screen-bottom__animation">
+          <div class="screen-bottom__envelope"></div>
+          <div class="screen-bottom__vector-line vector-line">
+            <svg
+              viewBox="0 0 422.3369140625 180.63134765625"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M117.11402626953125 23.619979114968565C99.79596366147375 24.286096892739923 87.60242221304087 32.1450871336446 73.15899955910226 41.3995135251017C51.11176312754253 55.52555873474482 29.980672924949147 71.93097376282822 10.931003978885448 89.92252630189071C7.99138911491078 92.69870427722817 4.974529079257581 95.42465164917715 2.0412567660988348 98.19483194052792C-5.418132781122874 105.23986149338943 21.46508622960198 91.53090522432045 30.932805257835614 87.57668215259801C90.07371791905511 62.876470170927334 146.95700236628605 33.111214062500004 206.75191248555382 9.91509627294055C213.83092891433986 7.168831746486686 260.29948502218934 -10.457411857086722 236.3839700287768 12.013985784081454C203.67510060038367 42.74749300110947 164.3160491482526 67.4629490962463 128.72004459076828 94.7376669292021C123.35011819468842 98.85257795106786 116.32907937777367 103.46004877034024 111.92802884904309 108.81298172845784C107.2730763648761 114.47504531538924 126.75705260262573 111.17706883321006 133.90504239725868 109.55394560431306C166.02388966346152 102.26101178000185 196.3529280666374 88.81720312384431 228.60597351204234 81.64997075975407C257.76046546782544 75.17122253663554 222.08499159751756 105.45302917841624 215.7649320965468 111.28302791697485C210.40300261244914 116.22786846049834 148.06707371082192 172.96995743054273 163.53809955447946 177.70787787652552C191.40608829511834 186.2450812245747 229.16300841230583 167.57204184252495 254.4092595402644 157.33599450524684C259.01248200004625 155.46996507488905 266.59205513822116 151.50899460868158 271.9424890613443 151.28608068717642C275.1362557842548 151.15288212197208 267.6141604509523 156.18793782879533 266.50958698340423 159.18802933963573C259.99960082285503 176.91193523079235 368.195320907683 143.89893324357433 369.9771328587278 147.33510636094675C375.70492106601336 158.38309016792252 373.93810332493524 166.61591105364738 388.3750284878883 172.02907075513127C398.82099476470046 175.94705781943415 410.6339331834782 174.74502198710243 421.5872035641642 174.74502198710243"
+                stroke="#D62B14"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-dasharray="1136.617431640625"
+                style="stroke-dashoffset: 108.593px"
+              ></path>
+            </svg>
+          </div>
+
+          <div class="screen-bottom__photo01">
+            <img src="img/img01.png" alt="" />
+          </div>
+          <div class="screen-bottom__photo02">
+            <img src="img/img02.png" alt="" />
+          </div>
+          <div class="screen-bottom__photo03">
+            <img src="img/img03.png" alt="" />
+          </div>
+          <div class="screen-bottom__photo04">
+            <img src="img/img04.png" alt="" />
+          </div>
+          <div class="screen-bottom__butterfly-left"></div>
+          <div class="screen-bottom__butterfly-right"></div>
+          <div class="screen-bottom__envelope-bot"></div>
+        </div>
+      </div>
+      <div class="screen-footer">
+        <div class="noise"></div>
+        <div class="screen-footer__top">
+          <div class="screen-footer__arm js-arm"></div>
+        </div>
+        <div class="screen-footer__border">
+          <img src="img/border.jpg" alt="" class="screen-footer__border-img" />
+          <img
+            src="img/border-bottom.jpg"
+            alt=""
+            class="screen-footer__border-img--bottom"
+          />
+          <div class="screen-footer__slider scroll-footer">
+            <div class="scroll-footer__wrapper owl-carousel">
+              <div class="screen-footer__slider-item">
+                <button
+                  class="screen-footer__slider-item-txt txt-mannequin01 js-btn"
+                  data-screen="klimat"
+                >
+                  Комфорт
+                </button>
+              </div>
+              <div class="screen-footer__slider-item">
+                <button
+                  class="screen-footer__slider-item-txt txt-mannequin02 js-btn"
+                  data-screen="nepro"
+                >
+                  непродуваемость
+                </button>
+              </div>
+              <div class="screen-footer__slider-item">
+                <button
+                  class="screen-footer__slider-item-txt txt-mannequin03 js-btn"
+                  data-screen="style"
+                >
+                  тактильные ощущения
+                </button>
+              </div>
+              <div class="screen-footer__slider-item">
+                <button
+                  class="screen-footer__slider-item-txt txt-mannequin04 js-btn"
+                  data-screen="aqua"
+                >
+                  водонепроницаемость
+                </button>
+              </div>
+              <div class="screen-footer__slider-item">
+                <button
+                  class="screen-footer__slider-item-txt txt-mannequin05 js-btn"
+                  data-screen="makeup"
+                >
+                  крой и состав
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="klimat" class="sub-page sreen-klimat js-screen hidden">
       <div class="noise"></div>
-      <div class="screen-top__flower-left"></div>
-      <div class="screen-top__flower-right"></div>
+      <div class="sub-page__bg-txt-top txt-klimat anim-text-left">Комфорт</div>
+      <div class="conteiner">
+        <div class="sub-page__btn">
+          <button class="btn js-btn-back">Назад</button>
+        </div>
+        <div class="sub-page__row">
+          <div class="sub-page__col">
+            <h2 class="title">Климат<br />-контроль</h2>
+            <p class="description">
+              Возможно, ты сталкивалась с тем, что в холодное время года
+              заходила в помещение в верхней одежде и сразу начинала потеть.
+              Климат-контроль создан именно для того, чтобы избежать подобных
+              проблем. Это относительно новая технология, которая регулирует
+              температуру и влажность внутри одежды и обеспечивает максимальный
+              комфорт в любых климатических условиях.
+            </p>
+            <div class="sreen-klimat__arrow"></div>
+            <p class="description description--arrow">
+              Мы провели небольшой эксперимент с пальто
+              <a href="#" data-modal="#modal-pompa" class="js-modal">Pompa</a>,
+              чтобы понять, насколько эффективно работает мембрана
+              климат-контроля.
+            </p>
+          </div>
+          <div class="sub-page__col">
+            <div class="sreen-klimat__img">
+              <div class="sreen-klimat__img-left">
+                <img src="img/img05.jpg" alt="" />
+              </div>
+              <div class="sreen-klimat__img-right">
+                <img src="img/img06.png" alt="" />
+              </div>
+              <div class="sreen-klimat__butterfly"></div>
+            </div>
+            <p class="description">
+              С одной стороны пальто мы расположили емкость с водой, с другой —
+              зеркало. Спустя буквально несколько секунд зеркало запотело. Это
+              значит, что мембрана вывела всю жидкость на поверхность.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="nepro" class="sub-page sreen-nepro js-screen hidden">
+      <div class="noise"></div>
+      <div class="sub-page__bg-txt-top txt-nepro anim-text-left">
+        Непродуваемость
+      </div>
+      <div class="sub-page__bg-txt-bot txt-nepro anim-text-right">
+        Непродуваемость
+      </div>
+      <div class="conteiner">
+        <div class="sub-page__btn">
+          <button class="btn js-btn-back">Назад</button>
+        </div>
+        <div class="sub-page__middle">
+          <h2 class="title sreen-nepro__title">Непродуваемость</h2>
+          <div class="sreen-nepro__img">
+            <img src="img/img07.png" alt="" />
+            <div class="sreen-nepro__butterfly"></div>
+          </div>
+          <div class="sreen-nepro__entry">
+            <p class="description">
+              Мембрана заявляется как абсолютно непродуваемый материал. Мы
+              решили в этом удостовериться. Нам потребовались фен, свеча и
+              зажигалка.
+            </p>
+            <p class="description">
+              Главная цель эксперимента — посмотреть, сможет ли фен задуть огонь
+              через пальто с мембраной
+              <a href="#" data-modal="#modal-pompa" class="js-modal">Pompa</a>.
+              Мы зажгли свечу с одной стороны изделия, а с другой — подставили
+              фен на максимальной мощности. Спойлер: огонь остался нетронутым.
+              Так что, каким бы сильным ни был ветер, в пальто Pompa тебе будет
+              тепло.  
+            </p>
+          </div>
+          <div class="sreen-nepro__img-bot">
+            <img src="img/img08.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="style" class="sub-page sreen-style js-screen hidden">
+      <div class="noise"></div>
       <div class="screen-top__text-top anim-text-left"></div>
       <div class="screen-top__text-bottom anim-text-right"></div>
-      <div class="screen-top__entry">
-        <div class="screen-top__entry-top">
-          <div class="txt-delete screen-top__delete">Уничтож</div>
+      <div class="conteiner">
+        <div class="sub-page__top">
+          <h2 class="title sreen-style__title">Стиль</h2>
+          <div class="sreen-style__img-left">
+            <img src="img/img09.png" alt="" />
+          </div>
+          <div class="sreen-style__entry">
+            <p class="description description--lg">
+              Дизайнеры Pompa считают, что одежда — это искусство самовыражения,
+              возможность быть собой и заявлять о своей индивидуальности. В
+              модельном ряду бренда ты найдешь пальто с утепленной спинкой,
+              зимние, демисезонные и полупальто — на все случаи жизни, разного
+              кроя и расцветок.
+            </p>
+          </div>
+          <div class="border-entry sreen-style__entry-border">
+            <p class="description">
+              «Для меня большим плюсом является то, что пальто спокойно можно
+              носить как с джинсами и худи, так и с вечерним платьем — оно
+              всегда смотрится органично. Я очень непостоянна, и это заметно по
+              моему стилю.
+            </p>
+            <p class="description">
+              Я не придерживаюсь каких-то конкретных трендов, всегда выбираю
+              разное. Соответственно, для меня идеальное пальто должно быть
+              таким же «гибким» в этом плане», — отмечает Милена.
+            </p>
+          </div>
+          <div class="sreen-style__img-right">
+            <img src="img/img10.png" alt="" />
+          </div>
         </div>
-        <div class="screen-top__entry-middle">
-          <div class="txt-this screen-top__this">это</div>
-          <div class="screen-top__txt">краш-тест пальто с мембраной<br> Pompa от редакции Heroine</div>
-        </div>
-        <div class="screen-top__entry-bottom">
-          <div class="txt-coat screen-top__coat">пальто</div>
-          <div class="screen-top__butterfly js-butterfly"></div>
+        <div class="sub-page__btn sub-page__btn--bot">
+          <button class="btn js-btn-back">Назад</button>
         </div>
       </div>
     </div>
-    <div class="screen-middle">
+    <div id="aqua" class="sub-page sreen-aqua js-screen hidden">
       <div class="noise"></div>
-      <div class="screen-middle__txt-top"></div>
-      <div class="screen-middle__txt-middle"></div>
-      <div class="screen-middle__txt-bottom"></div>
-      <div class="screen-middle__girl"></div>
+      <div class="sub-page__bg-txt-top txt-aqua anim-text-left">
+        Водонепроницаемость
+      </div>
+      <div class="conteiner">
+        <div class="sub-page__btn">
+          <button class="btn js-btn-back">Назад</button>
+        </div>
+        <h2 class="title">Водонепроницаемость</h2>
+        <div class="sub-page__row sub-page__row--three">
+          <div class="sub-page__col">
+            <p class="description">
+              Мембрана — универсальный материал, который защитит твое тело от
+              ветра, снега и дождя. Чтобы в этом убедиться, мы провели небольшой
+              эксперимент с зеркалом и разбрызгивателем воды. 
+            </p>
+            <p class="description">
+              Главная цель — посмотреть, останутся ли капли на поверхности
+              зеркала при обильном разбрызгивании воды на верхнюю одежду. С
+              одной стороны пальто расположили зеркало, с другой — начали
+              поливать его из спринклера. Когда одежда сильно намокла, мы
+              проверили поверхность зеркала: оно осталось сухим.
+            </p>
+          </div>
+          <div class="sub-page__col">
+            <div class="sreen-aqua__img">
+              <img src="img/img11.png" alt="" />
+            </div>
+          </div>
+          <div class="sub-page__col">
+            <div class="border-entry border-entry--sm sreen-aqua__border-entry">
+              <p class="description">
+                <span>Важно:</span> ткани, которые содержат шерсть, не любят
+                воды и могут испортиться. Поэтому мы советуем не повторять наших
+                экспериментов дома, а просто носить пальто и наслаждаться. 
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sub-page__bg-txt-bot txt-aqua anim-text-right">
+        Водонепроницаемость
+      </div>
     </div>
-    <div class="screen-bottom">
+    <div id="makeup" class="sub-page sreen-makeup js-screen hidden">
       <div class="noise"></div>
-      <div class="screen-bottom__description">Осень с переменчивой погодой, зима с холодными ветрами и снегом требуют соответствующей верхней одеждыю Она должна быть красивой, а главное - комфортной: защищать от ветра и осадклв и обеспечивать теплою Наша героиня Милена рассказала, с какими проблемами чаще всего сталкивалась при выборе верхней одежды, и поделилась опытом носки пальто <a href="#" data-modal="#modal-pompa" class="js-modal">Pompa.</a> А мы провели несколько эксперементов, чтобы проверить его на водостойкость, непродуваемость и эффективность климат-контроля.</div>
-      <div class="screen-bottom__envelope"></div>
-      <div class="screen-bottom__vector-line vector-line">
-        <svg viewBox="0 0 422.3369140625 180.63134765625" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M117.11402626953125 23.619979114968565C99.79596366147375 24.286096892739923 87.60242221304087 32.1450871336446 73.15899955910226 41.3995135251017C51.11176312754253 55.52555873474482 29.980672924949147 71.93097376282822 10.931003978885448 89.92252630189071C7.99138911491078 92.69870427722817 4.974529079257581 95.42465164917715 2.0412567660988348 98.19483194052792C-5.418132781122874 105.23986149338943 21.46508622960198 91.53090522432045 30.932805257835614 87.57668215259801C90.07371791905511 62.876470170927334 146.95700236628605 33.111214062500004 206.75191248555382 9.91509627294055C213.83092891433986 7.168831746486686 260.29948502218934 -10.457411857086722 236.3839700287768 12.013985784081454C203.67510060038367 42.74749300110947 164.3160491482526 67.4629490962463 128.72004459076828 94.7376669292021C123.35011819468842 98.85257795106786 116.32907937777367 103.46004877034024 111.92802884904309 108.81298172845784C107.2730763648761 114.47504531538924 126.75705260262573 111.17706883321006 133.90504239725868 109.55394560431306C166.02388966346152 102.26101178000185 196.3529280666374 88.81720312384431 228.60597351204234 81.64997075975407C257.76046546782544 75.17122253663554 222.08499159751756 105.45302917841624 215.7649320965468 111.28302791697485C210.40300261244914 116.22786846049834 148.06707371082192 172.96995743054273 163.53809955447946 177.70787787652552C191.40608829511834 186.2450812245747 229.16300841230583 167.57204184252495 254.4092595402644 157.33599450524684C259.01248200004625 155.46996507488905 266.59205513822116 151.50899460868158 271.9424890613443 151.28608068717642C275.1362557842548 151.15288212197208 267.6141604509523 156.18793782879533 266.50958698340423 159.18802933963573C259.99960082285503 176.91193523079235 368.195320907683 143.89893324357433 369.9771328587278 147.33510636094675C375.70492106601336 158.38309016792252 373.93810332493524 166.61591105364738 388.3750284878883 172.02907075513127C398.82099476470046 175.94705781943415 410.6339331834782 174.74502198710243 421.5872035641642 174.74502198710243" stroke="#D62B14" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="1136.617431640625" style="stroke-dashoffset: 108.593px;"></path></svg>
+      <div class="sub-page__bg-txt-top txt-makeup01 anim-text-left">
+        Водонепроницаемость
       </div>
-      
-      <div class="screen-bottom__photo01">
-        <img src="img/img01.png" alt="">
-      </div>
-      <div class="screen-bottom__photo02">
-        <img src="img/img02.png" alt="">
-      </div>
-      <div class="screen-bottom__photo03">
-        <img src="img/img03.png" alt="">
-      </div>
-      <div class="screen-bottom__photo04">
-        <img src="img/img04.png" alt="">
-      </div>
-      <div class="screen-bottom__butterfly-left"></div>
-      <div class="screen-bottom__butterfly-right"></div>
-      <div class="screen-bottom__envelope-bot"></div>
-      
-    </div>
-    <div class="screen-footer">
-      <div class="noise"></div>
-      <div class="screen-footer__top">
-        <div class="screen-footer__arm js-arm"></div>
-      </div>
-      <div class="screen-footer__border">
-        <img src="img/border.jpg" alt="" class="screen-footer__border-img">
-        <div class="screen-footer__slider scroll-footer simplebar-scrollable-x js-scroll">
-          <div class="scroll-footer__wrapper">
-            <div class="screen-footer__slider-item">
-              <button class="screen-footer__slider-item-txt txt-mannequin01 js-btn">Комфорт</button>
+      <div class="conteiner">
+        <div class="sub-page__btn">
+          <button class="btn js-btn-back">Назад</button>
+        </div>
+        <div class="sub-page__row sub-page__row--makeup">
+          <div class="sub-page__col">
+            <h2 class="title">Крой <br />и состав</h2>
+            <div class="sreen-makeup__img">
+              <img src="img/img12.png" alt="" />
             </div>
-            <div class="screen-footer__slider-item">
-              <button class="screen-footer__slider-item-txt txt-mannequin02 js-btn">непродуваемость</button>
-            </div>
-            <div class="screen-footer__slider-item">
-              <button class="screen-footer__slider-item-txt txt-mannequin03 js-btn">тактильные ощущения</button>
-            </div>
-            <div class="screen-footer__slider-item">
-              <button class="screen-footer__slider-item-txt txt-mannequin04 js-btn">водонепроницаемость</button>
-            </div>
-            <div class="screen-footer__slider-item">
-              <button class="screen-footer__slider-item-txt txt-mannequin05 js-btn">крой и состав</button>
+          </div>
+          <div class="sub-page__col">
+            <div
+              class="border-entry border-entry--lg sreen-makeup__border-entry"
+            >
+              <p class="description">
+                «Когда речь заходит о качестве, я очень придирчива к деталям. Но
+                тут у меня не получилось ни к чему прицепиться, даже если
+                скрупулезно присматриваться ко всем мелочам: отстрочке, изнанке,
+                швам. Единственное, что можно обнаружить, — это идеальную
+                аккуратность, четкие, ровные линии и просто высокое качество
+                исполнения.
+              </p>
+              <p class="description">
+                По заявлению производителя, перед отправкой в магазины каждое
+                изделие Pompa проходит тройной контроль качества, и это заметно
+                невооруженным глазом. Пальто легкое, теплое, не стесняет
+                движения. Мне кажется, оно отлично подойдет людям, которые все
+                время куда-то бегут, — вечным двигателям вроде меня», — говорит
+                Милена.
+              </p>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="sub-page sreen-klimat js-screen hidden">
-    <div class="noise"></div>
-    <div class="sub-page__bg-txt-top txt-klimat anim-text-left">Комфорт</div>
-    <div class="conteiner">
-      <div class="sub-page__btn">
-        <button class="btn js-btn-back">Назад</button>
-      </div>
-      <div class="sub-page__row">
-        <div class="sub-page__col">
-          <h2 class="title">Климат<br>-контроль</h2>
-          <p class="description">Возможно, ты сталкивалась с тем, что в холодное время года заходила в помещение в верхней одежде и сразу начинала потеть. Климат-контроль создан именно для того, чтобы избежать подобных проблем. Это относительно новая технология, которая регулирует температуру и влажность внутри одежды и обеспечивает максимальный комфорт в любых климатических условиях.</p>
-          <p class="description description--arrow">Мы провели небольшой эксперимент с пальто <a href="#" data-modal="#modal-pompa" class="js-modal">Pompa</a>, чтобы понять, насколько эффективно работает мембрана климат-контроля.</p>
-          <div class="sreen-klimat__arrow"></div>
-        </div>
-        <div class="sub-page__col">
-          <div class="sreen-klimat__img">
-            <div class="sreen-klimat__img-left"><img src="img/img05.jpg" alt=""></div>
-            <div class="sreen-klimat__img-right"><img src="img/img06.png" alt=""></div>
-            <div class="sreen-klimat__butterfly"></div>
-          </div>
-          <p class="description">С одной стороны пальто мы расположили емкость с водой, с другой — зеркало. Спустя буквально несколько секунд зеркало запотело. Это значит, что мембрана вывела всю жидкость на поверхность.</p>
-        </div>
+      <div class="sub-page__bg-txt-bot txt-makeup02 anim-text-right">
+        Водонепроницаемость
       </div>
     </div>
-  </div>
-  <div class="sub-page sreen-nepro js-screen hidden">
-    <div class="noise"></div>
-    <div class="sub-page__bg-txt-top txt-nepro anim-text-left">Непродуваемость</div>
-    <div class="sub-page__bg-txt-bot txt-nepro anim-text-right">Непродуваемость</div>
-    <div class="conteiner">
-      <div class="sub-page__btn">
-        <button class="btn js-btn-back">Назад</button>
-      </div>
-      <div class="sub-page__middle">
-        <div class="sreen-nepro__img">
-          <img src="img/img07.png" alt="">
-          <div class="sreen-nepro__butterfly"></div>
-        </div>
-        <h2 class="title sreen-nepro__title">Непродуваемость</h2>
-        <div class="sreen-nepro__entry">
-          <p class="description">Мембрана заявляется как абсолютно непродуваемый материал. Мы решили в этом удостовериться. Нам потребовались фен, свеча и зажигалка.</p>
-          <p class="description">Главная цель эксперимента — посмотреть, сможет ли фен задуть огонь через пальто с мембраной <a href="#">Pompa</a>. Мы зажгли свечу с одной стороны изделия, а с другой — подставили фен на максимальной мощности. Спойлер: огонь остался нетронутым. Так что, каким бы сильным ни был ветер, в пальто Pompa тебе будет тепло.  </p>
-        </div>
-        <div class="sreen-nepro__img-bot"><img src="img/img08.png" alt=""></div>          
+    <div id="modal-pompa" class="modal">
+      <div class="modal__content">
+        <div class="btn-close modal__btn-close js-modal-close"></div>
+        <p class="modal__descroption modal__descroption--top">
+          Pompa — lifestyle-бренд женской одежды с 30-летней историей, который
+          совмещает в себе эстетику, комфорт и высокие технологии.
+        </p>
+        <p class="modal__descroption">
+          Все вещи Pompa изготавливаются на собственной фабрике , оснащенной
+          европейскими технологическими линиями, в Санкт-Петербурге. В 2019 году
+          компания получила сертификат от мировой федерации текстильной
+          промышленности и была внесена в международную базу с высокими
+          стандартами производства. Бренд постоянно развивается, но его
+          философия остается неизменной — создавать качественную одежду,
+          предвосхищая ожидания покупателей.
+        </p>
       </div>
     </div>
-  </div>
-  <div class="sub-page sreen-style js-screen hidden">
-    <div class="noise"></div>
-    <div class="screen-top__text-top anim-text-left"></div>
-    <div class="screen-top__text-bottom anim-text-right"></div>
-    <div class="conteiner">
-      <div class="sub-page__top">
-        <div class="sreen-style__img-left">
-          <img src="img/img09.png" alt="">
-        </div>
-        <h2 class="title sreen-style__title">Стиль</h2>
-        <div class="sreen-style__entry">
-          <p class="description description--lg">Дизайнеры Pompa считают, что одежда — это искусство самовыражения, возможность быть собой и заявлять о своей индивидуальности. В модельном ряду бренда ты найдешь пальто с утепленной спинкой, зимние, демисезонные и полупальто — на все случаи жизни, разного кроя и расцветок.</p>
-        </div>
-        <div class="border-entry sreen-style__entry-border">
-          <p class="description">«Для меня большим плюсом является то, что пальто спокойно можно носить как с джинсами и худи, так и с вечерним платьем — оно всегда смотрится органично. Я очень непостоянна, и это заметно по моему стилю.</p>
-          <p class="description">Я не придерживаюсь каких-то конкретных трендов, всегда выбираю разное. Соответственно, для меня идеальное пальто должно быть таким же «гибким» в этом плане», — отмечает Милена.</p>
-        </div>
-        <div class="sreen-style__img-right"><img src="img/img10.png" alt=""></div>          
-      </div>
-      <div class="sub-page__btn sub-page__btn--bot">
-        <button class="btn js-btn-back">Назад</button>
-      </div>
-    </div>
-  </div>
-  <div class="sub-page sreen-aqua js-screen hidden">
-    <div class="noise"></div>
-    <div class="sub-page__bg-txt-top txt-aqua anim-text-left">Водонепроницаемость</div>
-    <div class="conteiner">
-      <div class="sub-page__btn">
-        <button class="btn js-btn-back">Назад</button>
-      </div>
-      <h2 class="title">Водонепроницаемость</h2>
-      <div class="sub-page__row sub-page__row--three">
-        <div class="sub-page__col">
-          <p class="description">Мембрана — универсальный материал, который защитит твое тело от ветра, снега и дождя. Чтобы в этом убедиться, мы провели небольшой эксперимент с зеркалом и разбрызгивателем воды. </p>
-          <p class="description">Главная цель — посмотреть, останутся ли капли на поверхности зеркала при обильном разбрызгивании воды  на верхнюю одежду. С одной стороны пальто расположили зеркало, с другой — начали поливать его из спринклера. Когда одежда сильно намокла, мы проверили поверхность зеркала: оно осталось сухим.</p>
-        </div>
-        <div class="sub-page__col">
-          <div class="sreen-aqua__img">
-            <img src="img/img11.png" alt="">
-          </div>
-        </div>
-        <div class="sub-page__col">
-          <div class="border-entry border-entry--sm sreen-aqua__border-entry">
-            <p class="description"><span>Важно:</span> ткани, которые содержат шерсть, не любят воды и могут испортиться. Поэтому мы советуем не повторять наших экспериментов дома, а просто носить пальто и наслаждаться. </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="sub-page__bg-txt-bot txt-aqua anim-text-right">Водонепроницаемость</div>
-  </div>
-  <div class="sub-page sreen-makeup js-screen hidden">
-    <div class="noise"></div>
-    <div class="sub-page__bg-txt-top txt-makeup01 anim-text-left">Водонепроницаемость</div>
-    <div class="conteiner">
-      <div class="sub-page__btn">
-        <button class="btn js-btn-back">Назад</button>
-      </div>
-      <div class="sub-page__row sub-page__row--makeup">
-        <div class="sub-page__col">
-          <h2 class="title">Крой <br>и состав</h2>
-          <div class="sreen-makeup__img">
-            <img src="img/img12.png" alt="">
-          </div>
-        </div>
-        <div class="sub-page__col">
-          <div class="border-entry border-entry--lg sreen-makeup__border-entry">
-            <p class="description">«Когда речь заходит о качестве, я очень придирчива к деталям. Но тут у меня не получилось ни к чему прицепиться, даже если скрупулезно присматриваться ко всем мелочам: отстрочке, изнанке, швам. Единственное, что можно обнаружить, — это идеальную аккуратность, четкие, ровные линии и просто высокое качество исполнения.</p>
-            <p class="description">По заявлению производителя, перед отправкой в магазины каждое изделие Pompa проходит тройной контроль качества, и это заметно невооруженным глазом. Пальто легкое, теплое, не стесняет движения. Мне кажется, оно отлично подойдет людям, которые все время куда-то бегут, — вечным двигателям вроде меня», — говорит Милена.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="sub-page__bg-txt-bot txt-makeup02 anim-text-right">Водонепроницаемость</div>
-  </div>
-  <div id="modal-pompa" class="modal">
-    <div class="modal__content">
-      <div class="btn-close modal__btn-close js-modal-close"></div>
-      <p class="modal__descroption modal__descroption--top">Pompa — lifestyle-бренд женской одежды с 30-летней историей, который совмещает в себе эстетику, комфорт и высокие технологии.</p>
-      <p class="modal__descroption">Все вещи Pompa изготавливаются на собственной фабрике , оснащенной европейскими технологическими линиями, в Санкт-Петербурге. В 2019 году компания получила сертификат от мировой федерации текстильной промышленности и была внесена в международную базу с высокими стандартами производства. Бренд постоянно развивается, но его философия остается неизменной — создавать качественную одежду, предвосхищая ожидания покупателей. </p>
-    </div>
-  </div>
-  <script src="js/anime.min.js"></script>
-  <script src="js/simplebar.min.js"></script>
-  <script src="js/main.js"></script>
-</body>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.mousewheel.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/anime.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
