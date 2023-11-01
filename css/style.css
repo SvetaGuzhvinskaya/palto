@@ -251,6 +251,10 @@ a {
   line-height: 1.3em;
 }
 
+.description--sm {
+  font-size: 1em;
+}
+
 .description:not(:last-child) {
   margin-bottom: 1.9em;
 }
@@ -306,8 +310,41 @@ a {
 }
 
 .border-entry--sm {
-  min-height: 17.45em;
+  min-height: 15.45em;
   background-image: url("../img/bg-blur-sm.png");
+}
+
+.border-img {
+  position: relative;
+  padding: 4.650em 4.800em 0;
+  width: 24.450em;
+  height: 31.550em;
+  overflow: hidden;
+}
+
+.border-img--sm {
+  margin-left: -6.250em;
+  padding: 3.550em 3.350em 0;
+  width: 18.700em;
+  height: 24.250em;
+}
+
+.border-img img {
+  position: relative;
+  display: block;
+  width: 100%;
+  z-index: 1;
+}
+
+.border-img__border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 0 0 url('../img/bg-border-xs.png') no-repeat;
+  background-size: 100% 100%;
+  z-index: 2;
 }
 
 .screen-top {
@@ -1169,11 +1206,14 @@ a {
 .sub-page__row {
   position: relative;
   display: grid;
-  grid-template-columns: 48% 1fr;
+  grid-template-columns: 1fr 24.300em;
   grid-gap: 11em;
   align-items: flex-end;
 }
 
+.sub-page__row--top {
+  align-items: start;
+}
 .sub-page__row--three {
   grid-template-columns: 34% 34% 1fr;
   grid-gap: 1.85em;
@@ -1186,6 +1226,10 @@ a {
 
 .sub-page__col {
   position: relative;
+}
+
+.sub-page__col--pad {
+  padding-right: 4em;
 }
 
 .sub-page__top {
@@ -1212,7 +1256,8 @@ a {
 .sreen-klimat__img {
   position: relative;
   margin-bottom: 2.25em;
-  height: 25.2em;
+  padding-top: 4em;
+  width: 24.450em;
 }
 
 .sreen-klimat__img img {
@@ -1220,17 +1265,16 @@ a {
   width: 100%;
 }
 
-.sreen-klimat__img-left,
-.sreen-klimat__img-right {
+.sreen-klimat__img-left {
   position: absolute;
   z-index: 1;
 }
 
 .sreen-klimat__img-left {
-  top: 1em;
-  right: 1em;
-  width: 14.05em;
-  height: 20.4em;
+  top: -5em;
+  right: 0;
+  width: 20.000em;
+  height: 29em;
   animation: klimat-img-left 1s linear forwards;
 }
 
@@ -1251,40 +1295,19 @@ a {
 }
 
 .sreen-klimat__img-right {
-  top: 0;
-  right: 0;
-  width: 20.65em;
-  height: 25.2em;
-  animation: klimat-img-right 1s linear forwards;
+  position: relative;
+  width: 24.450em;
+  height: 31.550em;
+  z-index: 2;
 }
 
-@keyframes klimat-img-right {
-  0% {
-    transform: rotate(0deg);
-    animation-timing-function: linear;
-  }
-
-  61% {
-    transform: rotate(0deg);
-    animation-timing-function: cubic-bezier(0.34, 1.61, 0.7, 1);
-  }
-
-  80% {
-    transform: rotate(5deg);
-    animation-timing-function: cubic-bezier(0.34, 1.61, 0.7, 1);
-  }
-
-  100% {
-    transform: rotate(0deg);
-  }
-}
 
 .sreen-klimat__butterfly {
   position: absolute;
   right: 18em;
-  top: -6em;
-  width: 9em;
-  height: 10.2em;
+  top: -8em;
+  width: 4.650em;
+  height: 5em;
   background: 0 0 url("../img/butterfly03.png") no-repeat;
   background-size: 100% 100%;
   z-index: 11;
@@ -1294,8 +1317,8 @@ a {
 
 .sreen-klimat__arrow {
   position: absolute;
-  bottom: 4.45em;
-  right: -6.25em;
+  bottom: 2.45em;
+  right: -4.25em;
   width: 14.15em;
   height: 5.25em;
   background: 0 0 url("../img/arrow01.svg") no-repeat;
@@ -1328,7 +1351,8 @@ a {
 
 .sreen-nepro__entry {
   margin-left: 26em;
-  margin-right: 14em;
+  margin-right: 20.000em;
+  padding-bottom: 6.000em;
 }
 
 .sreen-nepro__butterfly {
@@ -1390,6 +1414,10 @@ a {
 
 .sreen-aqua__border-entry {
   margin-bottom: 1em;
+}
+
+.sreen-aqua__border-entry.border-entry--sm {
+  margin-bottom: 3em;
 }
 
 .sreen-makeup__img img {
@@ -1500,6 +1528,10 @@ a {
   .screen-bottom__description,
   .modal__descroption {
     font-size: 20px;
+  }
+
+  .description--sm {
+    font-size: 18px;
   }
 
   .modal__descroption {
@@ -1810,6 +1842,34 @@ a {
     width: 5.5em;
     height: 5.5em;
     transform: translateY(calc(-50% - 1.8em));
+  }
+  .sreen-klimat__img {
+    width: 100%;
+  }
+  .sreen-klimat__img-left {
+    right: auto;
+    width: 320px;
+    height: auto;
+    left: 100px;
+  }
+  .sreen-klimat__img-right {
+    width: auto;
+    height: auto;
+    padding-top: 200px;
+  }
+  .border-img {
+    margin: 0 auto;
+    padding: 60px 64px 0;
+    max-width: 320px;
+    width: auto;
+    height: auto;
+  }
+  
+  .border-img--sm {
+    margin-left: auto;
+    padding: 65px 69px 0;
+    width: auto;
+    height: auto;
   }
 }
 
